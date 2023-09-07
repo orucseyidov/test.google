@@ -36,6 +36,8 @@ $client->setScopes([
     'https://www.googleapis.com/auth/analytics.readonly'
 ]);
 
+echo "TEST 1 <br>";
+
 $analytics = new Google_Service_Analytics($client);
 $viewId = 'G-BMFLZ1BYDM';
 $result = $analytics->data_realtime->get(
