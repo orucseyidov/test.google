@@ -22,6 +22,7 @@ echo "TEST 1 <br>";
 $analytics = new Google_Service_Analytics($client);
 // $viewId = 'G-BMFLZ1BYDM';
 $viewId = 5985740718;
+echo $viewId . "<br>";
 $result = $analytics->data_realtime->get(
     'ga:' . $viewId,
     'rt:activeVisitors',
