@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "javiddogroup-1683361303462",
+  "private_key_id": "cba12c5b13218466fb38f2c04a3cba9ab2a0b21d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDO7O4/fUtqLvsl\nVUyztohoMcmYVOrI7Axo7e9EiVeNjCflETuPZxdBOJbWehWWDCXvCX/qnGTirL/G\nZuJGpwVRphpYmutTb6rXea8f6z6O7FF64CT>",  
+  "client_email": "javiddo-com@javiddogroup-1683361303462.iam.gserviceaccount.com",
+  "client_id": "104946754701183805932",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/javiddo-com%40javiddogroup-1683361303462.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
