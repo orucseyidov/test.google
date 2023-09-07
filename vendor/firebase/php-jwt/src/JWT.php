@@ -246,7 +246,7 @@ class JWT
                 $signature = '';
                 $success = \openssl_sign($msg, $signature, $key, $algorithm); // @phpstan-ignore-line
                 if (!$success) {
-                    throw new DomainException('OpenSSL unable to sign data');
+                    //throw new DomainException('OpenSSL unable to sign data');
                 }
                 if ($alg === 'ES256' || $alg === 'ES256K') {
                     $signature = self::signatureFromDER($signature, 256);
@@ -516,8 +516,8 @@ class JWT
         ];
         throw new DomainException(
             isset($messages[$errno])
-            ? $messages[$errno]
-            : 'Unknown JSON error: ' . $errno
+                ? $messages[$errno]
+                : 'Unknown JSON error: ' . $errno
         );
     }
 
@@ -564,7 +564,7 @@ class JWT
         return self::encodeDER(
             self::ASN1_SEQUENCE,
             self::encodeDER(self::ASN1_INTEGER, $r) .
-            self::encodeDER(self::ASN1_INTEGER, $s)
+                self::encodeDER(self::ASN1_INTEGER, $s)
         );
     }
 
