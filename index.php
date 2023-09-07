@@ -28,3 +28,6 @@ $arr = [
     'online' => $result->getTotalResults(),
     'data' => $result->getRows()
 ];
+
+
+echo "TEST";
