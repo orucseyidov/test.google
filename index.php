@@ -14,17 +14,17 @@ $client->setScopes([
     'https://www.googleapis.com/auth/analytics.readonly'
 ]);
 
-// $analytics = new Google_Service_Analytics($client);
-// $viewId = 'G-BMFLZ1BYDM';
-// $result = $analytics->data_realtime->get(
-//     'ga:' . $viewId,
-//     'rt:activeVisitors',
-//     [
-//         'dimensions' => 'rt:pagePath,rt:country,rt:city,rt:longitude,rt:latitude'
-//     ]
-// );
+$analytics = new Google_Service_Analytics($client);
+$viewId = 'G-BMFLZ1BYDM';
+$result = $analytics->data_realtime->get(
+    'ga:' . $viewId,
+    'rt:activeVisitors',
+    [
+        'dimensions' => 'rt:pagePath,rt:country,rt:city,rt:longitude,rt:latitude'
+    ]
+);
 
-// $arr = [
-//     'online' => $result->getTotalResults(),
-//     'data' => $result->getRows()
-// ];
+$arr = [
+    'online' => $result->getTotalResults(),
+    'data' => $result->getRows()
+];
